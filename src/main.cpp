@@ -16,8 +16,8 @@ void loop()
   lineSensor.updateSensorsReadings();
 
   if (lineSensor.irStates.rightLine && lineSensor.irStates.leftLine)
-  { // Fica Parado
-    // motor.fullStop();
+  { // Era Fica Parado
+    // Agora anda p Tras
     motor.turnWheel(Motor::RIGHT_WHEEL, Motor::BACKWARD, Motor::MID_SPEED);
     motor.turnWheel(Motor::LEFT_WHEEL, Motor::BACKWARD, Motor::MID_SPEED);
   }

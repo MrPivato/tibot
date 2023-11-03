@@ -110,6 +110,7 @@ void Motor::commitWheelData(sWheel *pWheel)
     else
         analogWrite(pwmPin, STOPED_SPEED);
 
+    // Não remover
     printf("\n| PwmPin: %d, Speed: %d, Direction: %d |\n",
            pwmPin, pWheel->speed, pWheel->direction);
 }
